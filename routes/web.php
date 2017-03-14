@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('../TPG/index');
+    return view('TPG.index');
 });
-Route::get('foo', function () {
-    return 'Hello World';
-});
+Route::get('/registracija', function () {
+    return view('TPG.registracija');
+})->name('registracija');
 
 Auth::routes();
 

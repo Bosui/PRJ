@@ -1,22 +1,6 @@
 @extends('layouts.app')
 
-@section('content')<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-
-    <link rel="stylesheet" href="../tpg/main.css">
-</head>
-
-<body>
-
-    <!-- <a  class="logo " ></a> -->
+@section('content')
 
 <div class="container-fluid">
   <div class="row">
@@ -33,7 +17,8 @@
 
 
             <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-                <form class="form-horizontal" action="{{ route('registracija') }}" >
+                <form class="form-horizontal" action="{{ route('registracija') }}" method="get" >
+                  {{ csr_field() }}
                   <div class="thumbnail">
         <!-- <a href="../images/Auksciausia pavara baneris 920x1320.jpg" > -->
           <!-- <img src="/w3images/lights.jpg" alt="Lights" style="width:100%"> -->
@@ -56,8 +41,4 @@
             </div>
         </div>
     </div>
-
-</body>
-
-</html>
 @endsection
