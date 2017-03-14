@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>eee</title>
+  </head>
+  <body>
+    <button id="mybutton">click me</button>
+    <button id="mybutton2">click me2</button>
+    <script>
+      var greeting = "hello, ";
+      var button = document.getElementById("mybutton");
+      button.person_name = "Bob";
+      button.addEventListener("click", function() {
+        alert(greeting + button.person_name + ".");
+      }, false);
+      //
+      //
+      // var greeting = "hola, ";
+      //  var button2 = document.getElementById("mybutton2");
+      // button2.person_name = "Roberto";
+      // button2.addEventListener("click", function() {
+      //   alert(greeting + button2.person_name + ".");
+      // }, false);
+
+
+      var button = document.createElement("BUTTON");        // Create a <button> element
+      var t = document.createTextNode("CLICK ME");       // Create a text node
+      button.appendChild(t);                                // Append the text to <button>
+      document.body.appendChild(button);
+
+      var greeting = "hello, ";
+       var button = document.getElementById("mybutton");
+
+    </script>
+
+  </body>
+</html>
