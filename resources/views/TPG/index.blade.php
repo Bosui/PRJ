@@ -18,7 +18,7 @@
 
             <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
                 <form class="form-horizontal" action="{{ route('registracija') }}" method="get" >
-                  {{ csr_field() }}
+                  
                   <div class="thumbnail">
         <!-- <a href="../images/Auksciausia pavara baneris 920x1320.jpg" > -->
           <!-- <img src="/w3images/lights.jpg" alt="Lights" style="width:100%"> -->
